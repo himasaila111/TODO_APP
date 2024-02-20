@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #00feba, #5b548a) no-repeat fixed;
+}
+
+.to-do{
+    max-width: 500px;
+    margin:50px auto 20px;
+    padding: 35px 30px;
+    background: white;
+    border-radius: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.todoImage{
+    width: 45px;
+    margin-left: 10px;
+}
+
+.addTask{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textBox{
+    border:0;
+    outline:0;
+    padding: 15px 10px;
+    background-color:#f0eded;
+    border-radius: 20px;
+    flex:1;
+    color:#1f7863;
+}
+
+.addTask button{
+    border:0;
+    outline:0;
+    width:70px;
+    color: white;
+    background-color: chocolate;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.taskList li{
+    list-style: none;
+    padding: 15px 0 0 35px;
+    cursor: pointer;
+    user-select: none;
+    position:relative;
+}
+
+.taskList li::before{
+    content:"";
+    position: absolute;
+    left: 1px;
+    background: url("/images/unchecked.png");
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 50px solid black;
+    width:20px;
+    height:20px;
+}
+
+.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+
+.taskList .checked::before{
+    background: url("/images/checked.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    color:red;
+    font-size: 20px;
+    border-radius: 10px;
+    width:17px;
+    height:27px;
+}
+
+.copyRight{
+    font-size: 8px;
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+}
